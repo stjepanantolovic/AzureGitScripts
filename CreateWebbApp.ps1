@@ -1,5 +1,5 @@
 # Create variables
-$webappname = "mywebapps$(Get-Random)"
+$webappname = "mywebapps-stjepan"
 $rgname ='webapps-dev-rg-stjepan'
 $location = 'westus2'
 
