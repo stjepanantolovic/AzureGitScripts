@@ -1,6 +1,6 @@
 # Create variables
 $webbappname = "mywebapps$(Get-Random)"
-$rgname ='webapps-dev-rg'
+$rgname ='webapps-dev-rg-stjepan'
 $location = 'westus2'
 
 #Create a resource group
