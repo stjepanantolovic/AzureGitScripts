@@ -1,5 +1,5 @@
 # Create variables
-$webbappname = "mywebapps$(Get-Random)"
+$webappname = "mywebapps$(Get-Random)"
 $rgname ='webapps-dev-rg-stjepan'
 $location = 'westus2'
 
@@ -7,7 +7,7 @@ $location = 'westus2'
 New-AzResourceGroup Name $rgname -Location $location
 
 #Create an App Service plan in S1 tier
-New-AzAppServicePlan Name $webbappname -Location $location -ResourceGroupName $rgname -Tier S1
+New-AzAppServicePlan Name $webappname -Location $location -ResourceGroupName $rgname -Tier S1
 
 #Create a web app
-New-AzWebApp Name $webbappname -Location $location AppServicePlan $webbappname -ResourceGroupName $rgname
+New-AzWebApp Name $webappname -Location $location AppServicePlan $webappname -ResourceGroupName $rgname
